@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: kyos-public-github-org
+  namespace: kyos
+  description: "GitHub organization configuration for the Kyos public org."
+  tags:
+    - github
+    - organization
+    - config
+    - public
+  annotations:
+    github.com/project-slug: kyos-public/.github
+spec:
+  type: organization
+  owner: group:kyos/it-team
+  system: kyos-platform
